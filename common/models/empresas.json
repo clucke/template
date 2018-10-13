@@ -1,0 +1,23 @@
+{
+  "name": "empresas",
+  "plural": "empresas",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "number",
+      "id": true
+    },
+    "companyName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

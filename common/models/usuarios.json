@@ -1,0 +1,51 @@
+{
+  "name": "usuarios",
+  "plural": "usuarios",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "number",
+      "id": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "firstSurname": {
+      "type": "string",
+      "required": true
+    },
+    "secondSurname": {
+      "type": "string",
+      "required": true
+    },
+    "companyId": {
+      "type": "number",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "profileld": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

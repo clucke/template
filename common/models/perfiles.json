@@ -21,7 +21,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "usuarios": {
+      "type": "hasMany",
+      "model": "usuarios",
+      "foreignKey": "profileld"
+    }
+  },
   "acls": [],
   "methods": {}
 }

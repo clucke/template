@@ -28,10 +28,9 @@ module.exports = function(Usuarios) {
   };
 
   Usuarios.consultarPorId = function(_id, cb) {
-    Usuarios.findById(_id, function(err, obj) {
-      console.log({_id});
-      cb(null, err ? err : obj);
-    });
+    Usuarios.findById(_id, {include:['empresas','perfiles']}, function(err, obj) {
+        cb(null, err ? err : obj);
+      });
   };
 
   Usuarios.remoteMethod(

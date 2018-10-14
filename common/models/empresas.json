@@ -17,7 +17,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "usuarios": {
+      "type": "hasMany",
+      "model": "usuarios",
+      "foreignKey": "companyId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

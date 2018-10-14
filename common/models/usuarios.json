@@ -45,7 +45,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "empresas": {
+      "type": "belongsTo",
+      "model": "empresas",
+      "foreignKey": "companyId"
+    },
+    "perfiles": {
+      "type": "belongsTo",
+      "model": "perfiles",
+      "foreignKey": "profileld"
+    }
+  },
   "acls": [],
   "methods": {}
 }

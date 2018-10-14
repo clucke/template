@@ -1,4 +1,4 @@
-# template
+# Platilla para levantar un servicio Rest con conexion a mongo
 Plantilla para levantar un servicio sencillo con el framework loopback
 
 ## Requerimientos:

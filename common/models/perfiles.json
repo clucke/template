@@ -6,6 +6,7 @@
   "options": {
     "validateUpsert": true
   },
+  "hidden": ["usuarios"],
   "properties": {
     "_id": {
       "type": "number",

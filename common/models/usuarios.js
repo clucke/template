@@ -33,6 +33,16 @@ module.exports = function(Usuarios) {
       });
   };
 
+  Usuarios.actualizarPorId = function(_id, password, email, name, firstSurname,
+    secondSurname, companyId, status, profileld, cb) {
+    Usuarios.updateAll(
+      {_id}, 
+      {password, email, name, firstSurname, secondSurname, companyId, status, profileld}, 
+      function(err, obj){
+        cb(null, err ? err : obj);
+    });
+  }
+
   Usuarios.remoteMethod(
     'insertar',
     {
@@ -79,6 +89,25 @@ module.exports = function(Usuarios) {
       http: {path: '/consultarPorId', verb: 'get'},
       accepts: {arg: '_id', type: 'number'},
       returns: {arg: 'respuesta', type: 'array'},
+    }
+  );
+
+  Usuarios.remoteMethod(
+    'actualizarPorId',
+    {
+      http: {path: '/actualizarPorId', verb: 'put'},
+      accepts: [
+        {arg: '_id', type: 'number'},
+        {arg: 'password', type: 'string'},
+        {arg: 'email', type: 'string'},
+        {arg: 'name', type: 'string'},
+        {arg: 'firstSurname', type: 'string'},
+        {arg: 'secondSurname', type: 'string'},
+        {arg: 'companyId', type: 'number'},
+        {arg: 'status', type: 'string'},
+        {arg: 'profileld', type: 'number'},
+      ],
+      returns: {arg: 'respuesta', type: 'Object'},
     }
   );
 

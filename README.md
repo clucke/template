@@ -9,5 +9,6 @@ Plantilla para levantar un servicio sencillo con el framework loopback
 
 1. Instalar loopback
 2. Al crear un nuevo proyecto seleccionar empty-server como tipo de aplicacion
-3. Ejecutar npm install loopback-connector-mongodb --save
-4. Descargar este repositorio y sustituir las carpetas
+3. Ubicarse en la raiz del proyecto y ejecutar consola o terminal en caso de ser linux
+4. Ejecutar npm install loopback-connector-mongodb --save
+5. Descargar este repositorio, copiar las carpetas common, server al proyecto

@@ -4,6 +4,7 @@ Plantilla para levantar un servicio sencillo con el framework loopback
 ## Requerimientos:
 * Nodejs
 * Loopback
+* MongoDB
 
 ## Instalacion
 1. Ejecutar lb(windows), slc loopback(linux)

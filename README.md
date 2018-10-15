@@ -1,5 +1,5 @@
 # Plantilla servicio rest mongodb
-Plantilla para levantar un servicio sencillo con el framework loopback
+Modelos y archivos de configuracion
 ## Requerimientos:
 * Nodejs
 * Loopback (windows)

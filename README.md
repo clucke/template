@@ -5,7 +5,6 @@ Modelos y archivos de configuracion
 * Loopback (windows)
 * Node-gyp (linux)
 * Strongloop (linux)
-* Loopback-connector-mongodb
 * MongoDB
 ## Instalacion
 1. Ejecutar lb(windows), slc loopback(linux)
